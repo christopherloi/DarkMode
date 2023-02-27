@@ -1,0 +1,11 @@
+{
+  "name": "Dark Mode Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Enables dark mode on webpages",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["contentScript.js"]
+  }]
+}
